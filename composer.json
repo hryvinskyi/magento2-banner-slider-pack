@@ -1,0 +1,25 @@
+{
+    "name": "hryvinskyi/magento2-banner-slider-pack",
+    "version": "1.0.0",
+    "description": "Complete Banner Slider solution for Magento 2 with responsive images, video support, and advanced cropping tools",
+    "type": "metapackage",
+    "require": {
+        "magento/framework": "*",
+        "hryvinskyi/magento2-banner-slider-api": "^1.0.0",
+        "hryvinskyi/magento2-banner-slider": "^1.0.0",
+        "hryvinskyi/magento2-banner-slider-admin-ui": "^1.0.0",
+        "hryvinskyi/magento2-banner-slider-frontend-ui": "^1.0.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Volodymyr Hryvinskyi",
+            "email": "volodymyr@hryvinskyi.com"
+        }
+    ]
+}
