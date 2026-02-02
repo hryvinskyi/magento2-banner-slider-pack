@@ -10,6 +10,9 @@
         "hryvinskyi/magento2-banner-slider-admin-ui": "^1.0.0",
         "hryvinskyi/magento2-banner-slider-frontend-ui": "^1.0.0"
     },
+    "suggest": {
+        "hryvinskyi/module-banner-slider-analytics": "To track banner clicks and conversions"
+    },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
     },

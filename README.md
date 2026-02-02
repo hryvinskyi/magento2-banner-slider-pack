@@ -13,6 +13,7 @@ This metapackage provides a complete solution for managing banner sliders in Mag
 - **hryvinskyi/magento2-banner-slider** (v1.0.0) - Core business logic and data layer
 - **hryvinskyi/magento2-banner-slider-admin-ui** (v1.0.0) - Admin panel interface with responsive cropper
 - **hryvinskyi/magento2-banner-slider-frontend-ui** (v1.0.0) - Frontend display with Splide.js carousel
+- **hryvinskyi/magento2-banner-slider-analytics** (v1.0.0) - Analytics and statistics tracking
 
 ## Key Features
 
@@ -57,11 +58,21 @@ This metapackage provides a complete solution for managing banner sliders in Mag
 - **N+1 prevention** - Efficient queries with preloaded responsive crops
 - **Full Page Cache** - Proper cache tags for FPC compatibility
 
+### Analytics & Statistics
+- **Impression tracking** - Count how many times banners are displayed
+- **Click tracking** - Count how many times banners are clicked
+- **CTR calculation** - Automatic click-through rate calculation
+- **Daily aggregation** - Statistics aggregated by day for trend analysis
+- **Per-slider reporting** - View aggregated stats for each slider
+- **Per-banner reporting** - Drill down to individual banner performance
+- **Store view filtering** - Filter statistics by store view
+- **Visual dashboard** - Color-coded CTR indicators in admin grid
+
 ## Installation
 
 ```bash
 composer require hryvinskyi/magento2-banner-slider-pack
-php bin/magento module:enable Hryvinskyi_BannerSliderApi Hryvinskyi_BannerSlider Hryvinskyi_BannerSliderAdminUi Hryvinskyi_BannerSliderFrontendUi
+php bin/magento module:enable Hryvinskyi_BannerSliderApi Hryvinskyi_BannerSlider Hryvinskyi_BannerSliderAdminUi Hryvinskyi_BannerSliderFrontendUi Hryvinskyi_BannerSliderAnalytics
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 php bin/magento cache:flush
@@ -122,6 +133,13 @@ php bin/magento cache:flush
 </referenceContainer>
 ```
 
+### Viewing Analytics
+
+1. Navigate to **Content > Banner Slider > Analytics**
+2. View slider statistics dashboard with impressions, clicks, and CTR
+3. Click on a slider row to see per-banner performance details
+4. Use store view filter to analyze specific store performance
+
 ## Database Schema
 
 | Table | Description |
@@ -131,6 +149,7 @@ php bin/magento cache:flush
 | `hryvinskyi_banner_slider_image` | Responsive image variants |
 | `hryvinskyi_banner_slider_breakpoint` | Viewport breakpoints |
 | `hryvinskyi_banner_slider_responsive_crop` | Crop configurations |
+| `hryvinskyi_banner_slider_statistics` | Analytics data (impressions, clicks, CTR) |
 
 ## Requirements
 
