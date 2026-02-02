@@ -1,6 +1,6 @@
 {
     "name": "hryvinskyi/magento2-banner-slider-pack",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Complete Banner Slider solution for Magento 2 with responsive images, video support, and advanced cropping tools",
     "type": "metapackage",
     "require": {
